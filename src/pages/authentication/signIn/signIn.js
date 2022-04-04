@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { signIn } from '../../../config/config';
 import require from "../../../config/request";
 import {toast} from "react-toastify";
-
+ 
 
 function SignIn() {
     const fullName = useRef();
@@ -40,11 +40,11 @@ function SignIn() {
     return (
         <div className={'login'}>
             <div className="forms">
-                <h3> Ro'yhatdan o'tish </h3>
+                <h3> Sign Up </h3>
                 <input ref={fullName} type="text" placeholder={'Ism Familiya'}/>
                 <input ref={Email} type="text" placeholder={'email'}/>
                 <input ref={Pass} type="password" placeholder={'parol'}/>
-                <button onClick={Submit}> Tasdiqlash </button>
+                <button className='sign'  onClick={Submit}> Tasdiqlash </button>
             </div>
         </div>
     );
